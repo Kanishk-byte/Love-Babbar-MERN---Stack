@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table-5</title>
+
+    <style>
+        table {
+            text-align: center;
+        }
+
+        .thead {
+            background-color: rgb(218, 104, 42);
+            cursor: pointer;
+        }
+
+        .thead:hover {
+            background-color: rgb(82, 198, 59);
+        }
+
+        .tfoot {
+            background-color: rgb(82, 198, 59);
+            cursor: pointer;
+        }
+
+        .tfoot:hover {
+            background-color: rgb(218, 104, 42);
+        }
+
+        th {
+            margin: auto;
+            padding: 5px;
+            border: 2px solid black;
+        }
+
+        td {
+            margin: auto;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="title">
+        <h1>&larr; <u>Time Table</u> &rarr;</h1>
+    </div>
     <table border="1">
-        <thead>
+        <thead class="thead">
             <tr>
                 <th rowspan="3">Day</th>
                 <th colspan="3">Seminar</th>
@@ -46,13 +87,16 @@
                 <td>5 PM</td>
                 <td>XSL Transformations</td>
             </tr>
+        <tfoot class="tfoot">
             <tr>
                 <td>Wednesday</td>
                 <td>8 AM</td>
                 <td>12 PM</td>
                 <td>XSL Formatting Objects</td>
             </tr>
+        </tfoot>
         </tbody>
     </table>
 </body>
+
 </html>
